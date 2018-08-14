@@ -43,7 +43,9 @@ gulp.task('scripts', function () {
 	.pipe(concat({
 		path: 'script.min.js'
 	}))
-	.pipe(uglify())
+	.pipe(uglify().on('error', function(e){
+    console.log(e);
+  }))
 	.pipe(gulp.dest('./dist/js'));
 });
 
