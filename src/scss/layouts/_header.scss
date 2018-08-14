@@ -1,0 +1,66 @@
+.header {
+	position: fixed;
+	transition: $transition-fast;
+	height: 100vh;
+	width: 67px;
+	left: 0;
+
+	&:hover {
+		background-color: $text-color;
+	}
+
+	&__wrapper {
+		display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100% - 40px);
+    padding: 20px 0;
+	}
+
+	.logo {
+		cursor: pointer;
+		
+		&__text {
+			color: $color-white;
+			font: 40px/48px 'Jua', sans-serif;	
+		} 
+	}
+
+	.social {
+		padding: 0;
+		margin: 10px 0;
+		list-style-type: none;
+		position: relative;
+
+		&__item {
+			margin-bottom: 10px;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+			
+			span {
+				display: block;
+				transition: $transition-fast;
+				padding: 10px;
+
+				&:hover {
+					transform: scale(1.2); 
+				}
+			}
+
+			span.linkedin-in {
+				background: url(../img/social/linkedin-in.svg) center no-repeat;
+			}
+
+			span.telegram-plane {
+				background: url(../img/social/telegram-plane.svg) center no-repeat;
+			}
+
+			span.whatsapp {
+				background: url(../img/social/whatsapp.svg) center no-repeat;
+			}
+		}
+	}
+}
