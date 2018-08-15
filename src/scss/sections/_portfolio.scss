@@ -1,5 +1,36 @@
 .portfolio {
 
+	&__wrapper {
+		display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 150px;
+
+    h1.headline  {
+			margin: 0;
+			font-size: 64px;
+			color: $text-color;	
+		}
+
+		.portfolio-items {
+
+			&__item {
+				color: $color-white;
+				margin: 30px 0;
+
+				h2 {
+					font-size: 48px;
+					margin: 0;
+				}
+
+				p {
+					font-size: 24px;
+					margin: 0;
+				}
+			}
+		}
+	}
 
 	.progress-bar__name {
 		transform: translate(-67px, 110px) rotate(90deg);

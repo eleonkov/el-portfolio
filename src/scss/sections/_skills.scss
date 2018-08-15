@@ -8,20 +8,29 @@
     height: 100%;
     flex-direction: column;
     margin-left: 150px;
-	}
 
-	.headline h1 {
-		font-size: 60px;
-		color: $text-color;
-		margin: 0;
-	}
+    h1.headline {
+			font-size: 60px;
+			color: $text-color;
+			margin: 0;
+		}
 
-	.subheadline {
-		margin-top: 30px;
-		color: $text-color;
-		font-size: 25px;
-		border-left: 2px solid;
-    padding: 0 20px;
+		p.subheadline {
+			margin-top: 30px;
+			color: $text-color;
+			font-size: 24px;
+			border-left: 2px solid;
+    	padding: 0 20px;
+		}
+
+		.skils-items {
+			font-size: 24px;
+			color: $color-white;
+
+			&__item {
+				margin: 20px 0;
+			}
+		}
 	}
 
 	.progress-bar__name {

@@ -1,5 +1,9 @@
 .contacts {
-	
+	background: url(../img/map.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 45%;
+
 	.progress-bar__name {
 		transform: translate(-62px,105px) rotate(90deg);
 	}
