@@ -1,0 +1,31 @@
+.skils {
+	position: relative;
+	height: 100vh;
+
+	&__wrapper {
+		display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 150px;
+	}
+
+	.headline h1 {
+		font-size: 60px;
+		color: $text-color;
+		margin: 0;
+	}
+
+	.subheadline {
+		margin-top: 30px;
+		color: $text-color;
+		font-size: 25px;
+		border-left: 2px solid;
+    padding: 0 20px;
+	}
+
+	.progress-bar__name {
+		transform: translate(-38px,90px) rotate(90deg);
+	}
+}
+

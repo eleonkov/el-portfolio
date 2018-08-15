@@ -14,7 +14,7 @@ const paths = {
   stylesLibs: ['src/libs/css/normalize.css'],
   scripts: 'src/js/**/*.js',
   scriptsLibs: ['src/libs/js/particleground.js'],
-  images: 'src/img/**/*.svg',
+  images: 'src/img/**/*',
   fonts: 'src/fonts/**/*',
 };
 
