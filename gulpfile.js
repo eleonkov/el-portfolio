@@ -13,7 +13,9 @@ const paths = {
   styles: 'src/scss/**/*.scss',
   stylesLibs: ['src/libs/css/normalize.css'],
   scripts: 'src/js/**/*.js',
+  scriptsLibs: ['src/libs/js/particleground.js'],
   images: 'src/img/**/*.svg',
+  fonts: 'src/fonts/**/*',
 };
 
 gulp.task('styles', function () {
@@ -49,9 +51,25 @@ gulp.task('scripts', function () {
 	.pipe(gulp.dest('./dist/js'));
 });
 
+gulp.task('scriptsLibs', function () {
+	return gulp.src(paths.scriptsLibs)
+	.pipe(concat({
+		path: 'libs.min.js'
+	}))
+	.pipe(uglify().on('error', function(e){
+    console.log(e);
+  }))
+	.pipe(gulp.dest('./dist/js'));
+});
+
 gulp.task('images', function () {
 	return gulp.src(paths.images)
 		.pipe(gulp.dest('./dist/img'));
+});
+
+gulp.task('fonts', function () {
+	return gulp.src(paths.fonts)
+		.pipe(gulp.dest('./dist/fonts'));
 });
 
 gulp.task('clean', function () {
@@ -63,4 +81,4 @@ gulp.task('watch', function () {
 	gulp.watch(paths.scripts, ['scripts']);
 });
 
-gulp.task('default', ['watch', 'scripts', 'styles', 'stylesLibs', 'images']);
+gulp.task('default', ['watch', 'scripts', 'scriptsLibs', 'styles', 'stylesLibs', 'images', 'fonts']);

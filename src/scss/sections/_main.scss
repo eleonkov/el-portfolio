@@ -1,0 +1,33 @@
+.main {
+	position: relative;
+	height: 100vh;
+	
+	&__wrapper {
+		display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 150px;
+	}
+
+	.headline h1 {
+		font-size: 60px;
+		color: $color-white;
+		margin: 0;
+
+		span {
+			color: $text-color;
+		}
+	}
+
+	.subheadline {
+		margin-top: 30px;
+		color: $color-white;
+		font-size: 25px;
+	}
+
+	.progress-bar__name {
+		transform: translate(-40px, 80px) rotate(90deg);
+	}
+}
+

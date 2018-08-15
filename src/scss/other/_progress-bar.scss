@@ -1,0 +1,21 @@
+.progress-bar {
+ 	position: absolute;
+ 	border-left: 2px solid $color-white;
+  height: 100%;
+  width: 67px;
+  right: 0;
+  top: 0;
+
+  @media (max-width: 768px) {
+  	display: none;
+  }
+
+  &__name {
+		display: block;
+		font-size: 20px;
+		text-transform: uppercase;
+    position: absolute;
+    background: $primary-color;
+    padding: 0 15px;
+  }
+}

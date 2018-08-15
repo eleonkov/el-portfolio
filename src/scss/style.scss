@@ -1,7 +1,14 @@
 @import 'variables/vars';
 @import 'variables/transition';
 @import 'variables/keyframes';
+@import 'variables/fonts';
 
 @import 'base/main';
 
 @import 'layouts/header';
+
+@import 'sections/main';
+
+@import 'sections/experience';
+
+@import 'other/progress-bar';

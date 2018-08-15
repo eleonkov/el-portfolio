@@ -1,0 +1,10 @@
+
+@font-face {
+	font-family: "Segoe";
+	src: url("../fonts/Segoe/Segoe.eot") format("eot"),
+			 url("../fonts/Segoe/Segoe.otf") format("otf"),
+	  	 url("../fonts/Segoe/Segoe.ttf") format("ttf"),
+	  	 url("../fonts/Segoe/Segoe.woff") format("woff");
+}
+
+$segoe: Segoe, 'Trebuchet MS';
