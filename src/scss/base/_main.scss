@@ -1,17 +1,21 @@
 body {
-	color: $text-color;
-	font-family: $segoe;
-  background: $primary-color;
+  color: $color-white;
+  font-family: $segoeUI;
+  background: $color-dark;
+}
 
-  canvas {
-  	position: absolute;
-  }
+body canvas {
+  position: absolute;
+}
+
+body.scroll-hidden {
+  overflow: hidden !important;
 }
 
 a {
-	text-decoration: none;
-} 
+  text-decoration: none;
+}
 
 ul {
-	padding: 0;
+  padding: 0;
 }

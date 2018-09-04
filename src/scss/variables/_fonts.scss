@@ -1,10 +1,11 @@
-
 @font-face {
-	font-family: "Segoe";
-	src: url("../fonts/Segoe/Segoe.eot") format("eot"),
-			 url("../fonts/Segoe/Segoe.otf") format("otf"),
-	  	 url("../fonts/Segoe/Segoe.ttf") format("ttf"),
-	  	 url("../fonts/Segoe/Segoe.woff") format("woff");
+  font-family: 'SegoeUI';
+  src: url('../fonts/Segoe/SegoeUI.woff') format('woff'),
+  url('../fonts/Segoe/SegoeUI.ttf') format('truetype'),
+  url('../fonts/Segoe/SegoeUI.svg#SegoeUI') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-$segoe: Segoe, 'Trebuchet MS';
+
+$segoeUI: 'SegoeUI', 'Trebuchet MS';

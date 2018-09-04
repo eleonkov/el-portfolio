@@ -1,264 +1,265 @@
 .header {
-	position: fixed;
-	transition: $transition-fast;
-	height: 100vh;
-	width: 67px;
-	z-index: 10;
-	left: 0;
-	top: 0;
+  position: fixed;
+  transition: $transition-fast;
+  height: 100vh;
+  width: 67px;
+  z-index: 10;
+  left: 0;
+  top: 0;
 
-	@media (max-width: 768px) {
-		width: 100%;
+  @media (max-width: $sm-screen) {
+    width: 100%;
     height: 67px;
-	}
+  }
 
-	&:hover {
-			background-color: $text-color;
-	}
+  &:hover {
+    background-color: $color-turquoise;
+  }
 
-	&__wrapper {
-		display: flex;
+  &__wrapper {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: calc(100% - 40px);
     padding: 20px 0;
 
-    @media (max-width: 768px) {
-    	padding: 20px;
-			flex-direction: row;
-		}
-	}
+    @media (max-width: $sm-screen) {
+      height: 100%;
+      padding: 0 15px;
+      flex-direction: row;
+    }
+  }
 
-	.logo {
-		position: relative;
-		cursor: pointer;
-		z-index: 11;
-		
-		&__text {
-			color: $color-white;
-			font: 40px/48px 'Jua', sans-serif;	
-		} 
-	}
+  .logo {
+    position: relative;
+    cursor: pointer;
+    z-index: 11;
 
-	.main-menu {
+    &__text {
+      color: $color-white;
+      font: 40px/48px 'Jua', sans-serif;
+    }
+  }
 
-		&__toggle {
-			position: relative;
-			padding: 0 10px;
-			cursor: pointer;
-			z-index: 11;
+  .main-menu {
 
-			@media (max-width: 768px) {
-				padding: 10px 0;
-			}
+    &__toggle {
+      position: relative;
+      padding: 0 10px;
+      cursor: pointer;
+      z-index: 11;
 
-			&.on {
+      @media (max-width: $sm-screen) {
+        padding: 10px 0;
+      }
 
-				span {
-					background-color: transparent;
+      &.on {
 
-					&:after {
-						transform: translate(0, -40px) rotate(45deg);
+        span {
+          background-color: transparent;
 
-						@media (max-width: 768px) {
-							transform: translateY(0px) rotate(45deg);
-						}
-					}
+          &:after {
+            transform: translate(0, -40px) rotate(45deg);
 
-					&:before {
-						transform: translateX(0) rotate(-45deg); 
+            @media (max-width: $sm-screen) {
+              transform: translateY(0px) rotate(45deg);
+            }
+          }
 
-						@media (max-width: 768px) {
-							transform: translateY(3px) rotate(-45deg);
-						}
-					}
-				}
+          &:before {
+            transform: translateX(0) rotate(-45deg);
 
-				&:hover {
+            @media (max-width: $sm-screen) {
+              transform: translateY(3px) rotate(-45deg);
+            }
+          }
+        }
 
-					span:after {
-						transform: translate(0, -40px) rotate(45deg);
+        &:hover {
 
-						@media (max-width: 768px) {
-							transform: translateY(0px) rotate(45deg);
-						}
-					}
+          span:after {
+            transform: translate(0, -40px) rotate(45deg);
 
-					span:before {
-						transform: translateX(0) rotate(-45deg); 
+            @media (max-width: $sm-screen) {
+              transform: translateY(0px) rotate(45deg);
+            }
+          }
 
-						@media (max-width: 768px) {
-							transform: translateY(3px) rotate(-45deg);
-						}
-					}
-				}
-			}
+          span:before {
+            transform: translateX(0) rotate(-45deg);
 
-			&:hover {
+            @media (max-width: $sm-screen) {
+              transform: translateY(3px) rotate(-45deg);
+            }
+          }
+        }
+      }
 
-				span:after {
-					transform: translate(-9px, -40px);
+      &:hover {
 
-					@media (max-width: 768px) {
-						transform: translateY(-12px);
-					}
-				}
+        span:after {
+          transform: translate(-9px, -40px);
 
-				span:before {
-					transform: translateX(9px); 
+          @media (max-width: $sm-screen) {
+            transform: translateY(-12px);
+          }
+        }
 
-					@media (max-width: 768px) {
-						transform: translateY(9px);
-					}
-				}
-			}
+        span:before {
+          transform: translateX(9px);
 
-			span {
-				display: block;
-				background: $color-white;
-				transition: $transition-fast;
-				border-radius: 1px; 
-				height: 40px;	
-    		width: 3px;
+          @media (max-width: $sm-screen) {
+            transform: translateY(9px);
+          }
+        }
+      }
 
-    		@media (max-width: 768px) {
-					height: 3px;	
-    			width: 40px;
-				}
+      span {
+        display: block;
+        background: $color-white;
+        transition: $transition-fast;
+        border-radius: 1px;
+        height: 40px;
+        width: 3px;
 
-				&:after, &:before {
-					content: '';
-					display: block;
-					border-radius: 1px; 
-					transition: $transition-fast;
-					background: $color-white;
-					height: 40px;
-					width: 3px;
+        @media (max-width: $sm-screen) {
+          height: 3px;
+          width: 40px;
+        }
 
-					@media (max-width: 768px) {
-						height: 3px;	
-    				width: 40px;
-					}
-				}
+        &:after, &:before {
+          content: '';
+          display: block;
+          border-radius: 1px;
+          transition: $transition-fast;
+          background: $color-white;
+          height: 40px;
+          width: 3px;
 
-				&:after {
-					transform: translate(-8px, -40px);
+          @media (max-width: $sm-screen) {
+            height: 3px;
+            width: 40px;
+          }
+        }
 
-					@media (max-width: 768px) {
-						transform: translateY(-11px);
-					}
-				}
+        &:after {
+          transform: translate(-8px, -40px);
 
-				&:before {
-					transform: translateX(8px); 
+          @media (max-width: $sm-screen) {
+            transform: translateY(-11px);
+          }
+        }
 
-					@media (max-width: 768px) {
-						transform: translateY(8px);
-					}
-				}
-			}
-		}
+        &:before {
+          transform: translateX(8px);
 
-		&__collapse {
-			position: fixed;
-			background-color: $text-color;
-			transition: $transition-fast;
-			visibility: hidden;
-    	top: 0;
-    	left: 0;
-    	right: 0;
-    	bottom: 0;
-    	opacity: 0;
-    	z-index: -1;
-    	width: 0;
+          @media (max-width: $sm-screen) {
+            transform: translateY(8px);
+          }
+        }
+      }
+    }
 
-    	@media (max-width: 768px) {
-				height: 0;
-				width: 100%;
-			}
+    &__collapse {
+      position: fixed;
+      background-color: $color-turquoise;
+      transition: $transition-fast;
+      visibility: hidden;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      z-index: -1;
+      width: 0;
 
-			&.on {
-				overflow: hidden;
-				visibility: visible;
-    		opacity: 1;
-    		z-index: 10;
-    		width: 100%;
+      @media (max-width: $sm-screen) {
+        height: 0;
+        width: 100%;
+      }
 
-    		@media (max-width: 768px) {
-					height: 100%;
-				}
-			}
+      &.on {
+        overflow: hidden;
+        visibility: visible;
+        opacity: 1;
+        z-index: 10;
+        width: 100%;
 
-			nav {
-				display: flex;
-    		height: 100%;
-    		align-items: center;
-    		margin-left: 150px;
+        @media (max-width: $sm-screen) {
+          height: 100%;
+        }
+      }
 
-    		@media (max-width: 768px) {
-    			margin-left: 0;
-    			text-align: center;
-					justify-content: center;
-				}
-			}
+      nav {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        margin-left: 150px;
 
-			ul#menu li {
+        @media (max-width: $sm-screen) {
+          margin-left: 0;
+          text-align: center;
+          justify-content: center;
+        }
+      }
 
-				&.active a {
-					color: $primary-color;
-				}			
-			}
+      ul#menu li {
+        list-style-type: none;
+        &.active a {
+          color: $color-dark;
+        }
+      }
 
-			a {
-				font-size: 64px;
-				font-weight: 600;
-				color: $color-white;
-			}
-		}
-	}
+      a {
+        font-size: 64px;
+        font-weight: 600;
+        color: $color-white;
+      }
+    }
+  }
 
-	@media (max-width: 768px) {
-		.social {
-			display: none;
-		}
-	}
+  @media (max-width: $sm-screen) {
+    .social {
+      display: none;
+    }
+  }
 
-	.social-links {
-		padding: 0;
-		margin: 10px 0;
-		list-style-type: none;
-		position: relative;
-		z-index: 11;
+  .social-links {
+    padding: 0;
+    margin: 10px 0;
+    list-style-type: none;
+    position: relative;
+    z-index: 11;
 
-		&__item {
-			margin-bottom: 10px;
-			
-			&:last-child {
-				margin-bottom: 0;
-			}
-			
-			span {
-				display: block;
-				transition: $transition-fast;
-				padding: 11px;
+    &__item {
+      margin-bottom: 10px;
 
-				&:hover {
-					transform: scale(1.2); 
-				}
-			}
+      &:last-child {
+        margin-bottom: 0;
+      }
 
-			span.linkedin-in {
-				background: url(../img/social/linkedin-in.svg) center no-repeat;
-			}
+      span {
+        display: block;
+        transition: $transition-fast;
+        padding: 11px;
 
-			span.telegram-plane {
-				background: url(../img/social/telegram-plane.svg) center no-repeat;
-			}
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
 
-			span.whatsapp {
-				background: url(../img/social/whatsapp.svg) center no-repeat;
-			}
-		}
-	}
+      span.linkedin-in {
+        background: url(../img/social/linkedin-in.svg) center no-repeat;
+      }
+
+      span.telegram-plane {
+        background: url(../img/social/telegram-plane.svg) center no-repeat;
+      }
+
+      span.whatsapp {
+        background: url(../img/social/whatsapp.svg) center no-repeat;
+      }
+    }
+  }
 }

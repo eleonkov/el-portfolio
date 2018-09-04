@@ -1,7 +1,8 @@
-@import 'variables/vars';
+@import 'variables/fonts';
+@import 'variables/colors';
+@import "variables/screen";
 @import 'variables/transition';
 @import 'variables/keyframes';
-@import 'variables/fonts';
 
 @import 'base/main';
 
@@ -14,3 +15,4 @@
 
 
 @import 'other/progress-bar';
+@import "other/loader";

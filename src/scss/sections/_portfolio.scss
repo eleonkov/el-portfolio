@@ -1,38 +1,48 @@
 .portfolio {
 
-	&__wrapper {
-		display: flex;
+  &__wrapper {
+    display: flex;
     justify-content: center;
     height: 100%;
     flex-direction: column;
-    margin-left: 150px;
+    padding: 0 15px;
+  }
 
-    h1.headline  {
-			margin: 0;
-			font-size: 64px;
-			color: $text-color;	
-		}
+  h1.headline {
+    margin: 0 0 0 135px;
+    font: 600 64px/74px $segoeUI;
+    color: $color-turquoise;
 
-		.portfolio-items {
+    @media (max-width: $sm-screen) {
+      font: 600 32px/38px $segoeUI;
+      margin: 0;
+    }
+  }
 
-			&__item {
-				color: $color-white;
-				margin: 30px 0;
+  .portfolio-items {
+    margin: 0 0 0 135px;
 
-				h2 {
-					font-size: 48px;
-					margin: 0;
-				}
+    @media (max-width: $sm-screen) {
+      margin: 25px 0 0 0;
+    }
 
-				p {
-					font-size: 24px;
-					margin: 0;
-				}
-			}
-		}
-	}
+    &__item {
+      color: $color-white;
+      margin: 30px 0;
 
-	.progress-bar__name {
-		transform: translate(-67px, 110px) rotate(90deg);
-	}
+      h2 {
+        font-size: 48px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 24px;
+        margin: 0;
+      }
+    }
+  }
+
+  .progress-bar__name {
+    transform: translate(-67px, 110px) rotate(90deg);
+  }
 }
